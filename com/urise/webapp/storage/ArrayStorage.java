@@ -62,6 +62,7 @@ public class ArrayStorage {
     public void delete(String uuid) {
         int resumeIndex = findResume(uuid);
         if (resumeIndex != -1) {
+
             storage[resumeIndex] = storage[size - 1];
             storage[size - 1] = null;
             size--;

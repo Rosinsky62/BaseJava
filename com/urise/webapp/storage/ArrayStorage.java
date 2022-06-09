@@ -14,6 +14,7 @@ public class ArrayStorage {
 
     public void clear() {
         Arrays.fill(storage, null);
+
         size = 0;
     }
 
@@ -55,6 +56,7 @@ public class ArrayStorage {
             return storage[resumeIndex];
         } else {
             System.out.println("Резюме не найдено в массиве!");
+
             return null;
         }
     }

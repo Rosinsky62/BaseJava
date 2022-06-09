@@ -66,6 +66,7 @@ public class ArrayStorage {
             storage[size - 1] = null;
             size--;
         } else {
+
             System.out.println("Резюме не найдено в массиве!");
         }
     }

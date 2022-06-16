@@ -9,7 +9,7 @@ public interface Storage {
 
     public void clear();
 
-    public int findResume(String uuid);
+    public int getIndex(String uuid);
 
     public void save(Resume resume);
 

@@ -3,12 +3,6 @@ package com.urise.webapp.storage;
 import com.urise.webapp.model.Resume;
 
 public class ArrayStorage extends AbstractArrayStorage {
-    private final int STORAGE_LIMIT = 10000;
-    public Resume[] storage = new Resume[STORAGE_LIMIT];
-    int size = 0;
-
-
-
     public int getIndex(String uuid) {
         for (int i = 0; i < size; i++) {
             if (storage[i].toString().equals(uuid)) {

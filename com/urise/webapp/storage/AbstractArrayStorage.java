@@ -7,7 +7,7 @@ import java.util.Arrays;
 public abstract class AbstractArrayStorage implements Storage {
     protected final int STORAGE_LIMIT = 10000;
     protected Resume[] storage = new Resume[STORAGE_LIMIT];
-    int size = 0;
+    protected int size = 0;
 
     public void clear() {
         Arrays.fill(storage, null);
@@ -36,9 +36,9 @@ public abstract class AbstractArrayStorage implements Storage {
     }
 
     public void update(Resume resume) {
-        int resumeIndex = getIndex(resume.toString());
-        if (resumeIndex != -1) {
-            storage[resumeIndex] = resume;
+        int index = getIndex(resume.toString());
+        if (index != -1) {
+            storage[index] = resume;
         } else {
             System.out.println("Резюме не найдено в массиве!");
         }

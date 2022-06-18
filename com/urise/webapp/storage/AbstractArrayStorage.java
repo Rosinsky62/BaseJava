@@ -12,6 +12,8 @@ public abstract class AbstractArrayStorage implements Storage {
     public void clear() {
         Arrays.fill(storage, null);
         size = 0;
+
+
     }
 
     public int getIndex(String uuid) {

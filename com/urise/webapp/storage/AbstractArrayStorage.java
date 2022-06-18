@@ -21,6 +21,7 @@ public abstract class AbstractArrayStorage implements Storage {
             }
         }
         return -1;
+
     }
 
     public void save(Resume resume) {

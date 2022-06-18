@@ -22,6 +22,7 @@ public abstract class AbstractArrayStorage implements Storage {
                 return i;
             }
         }
+
         return -1;
     }
 
